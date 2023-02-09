@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(205, 134, 63, 0.075);
+}
+#main{
+    cursor: pointer;
+}
+nav .logo{
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 80px;
+}
+nav{
+    
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    
+} 
+.menu_btn{
+      width: 50px;
+      cursor: pointer;
+      display: flex;
+      position: relative;
+      float: right;
+      height: 50px;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      align-items: center;
+      display: none;
+}    
+
+nav ul li{
+    margin: 0 13px;
+}   
+nav ul li a{
+    
+    color: rgb(184, 183, 183);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 30px;
+    letter-spacing: 1.5px;
+    padding: 8px 10px;
+    
+}
+nav ul li a:hover{
+    text-decoration: underline rgba(255, 0, 0, 0.541);
+}
+nav:hover{
+    border: 1px solid lightgreen;
+    border-radius: 7px;
+    
+}
+h2{
+    font-size: 35px;
+    padding: 22px 24px;
+    font-weight: bolder;
+    color: grey;
+}
+section #main:hover{
+    border: 2px solid darkred;
+
+}
+section #images{
+    padding: 20px 25px ;
+    word-spacing: 39px;
+    margin-left: 25px;
+    margin-right: 5px;
+
+}
+ section .effect:hover{
+
+    border: 2px solid darkslategrey;
+    cursor: pointer;
+}
+section .subscription{
+    background-color: rgba(0, 0, 0, 0.911);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+h4{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder; 
+    padding-top: 12vh;
+    text-align: center;
+    line-height: 50px;  
+}
+div #input{
+    text-align: center;
+    word-spacing: 10px;
+    
+}
+input[type="text"],input[type="email"]{
+    border-radius: 5px;
+    height: 4vh;
+}
+input[type="submit"]{
+    background-color: lightgreen;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 9px;
+    width: 20vh;
+    height: 5vh;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+     background-color: brown;
+}
+h3{
+   text-align: center;
+   padding-top: 5px;
+   font-family:  Verdana, Geneva, Tahoma, sans-serif ;
+   font-size: 25px;
+}
+p{
+    text-align: center;
+    padding: 5px;
+    word-spacing: 3px;
+    font-weight: bolder;
+    font-size: large;
+}
+#click{
+    display: none;
+}
+#click:checked ~ ul{
+    left: 0%;
+}
+.Menu-btn{
+    float:right;
+    display: none;
+}
+
+@media only screen and (max-width:700px) {
+   nav{
+    width: 100%;
+   }
+   .logo{
+    height: 70vh;
+   }
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 2;
+        width: 62vh ;
+        word-spacing: 2000vh;
+        margin-right: 15px;
+        
+        
+        
+
+    }  
+    nav ul li{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        align-items: right;
+        
+        width: 70px;
+        
+
+
+    }
+    nav ul li a{
+        color :lightgray;
+        word-spacing: 10px;
+        width: fit-content;
+        display: none;
+        
+    }
+    #click:checked ~ .Menu-btn i:before{
+        content: "\f00d";
+    }
+    .Menu-btn{
+        display: block;
+    }
+    .Menu-btn{
+        background-color:black;
+        color:white;
+        border-bottom: 2px solid green;
+        padding:10px ;
+        display:flex;
+        justify-items:flex-end;
+        border-radius: 6px;
+        float:right;
+     }
+     .Menu-btn label{
+        background-color: yellow;
+        height: 45px;
+        width:45px ;
+        color:black;
+        border-radius: 6px;
+        display: flex;
+        float: right;
+        cursor:pointer;
+        border-radius: 6px;
+        justify-content: center;
+     }
+     .Menu-btn span{
+        background-color: white;
+        height: 3px;
+        width: 80%;
+        margin: 5px 0px;
+ 
+     }
+     .Menu-btn span:before,.menu-btn span:after{
+        content: ' ';
+        position:relative;
+        top: 6px;
+        bottom: -6px;
+     }
+     section .effect{
+        width: fit-content;
+        width: 30vh;
+        align-content: center;
+        
+
+     }
+     h4{
+        font-size: 40px;
+        text-align: center;
+     }
+     section .subscription h4{
+        font-size: medium;
+     }
+    
+}
